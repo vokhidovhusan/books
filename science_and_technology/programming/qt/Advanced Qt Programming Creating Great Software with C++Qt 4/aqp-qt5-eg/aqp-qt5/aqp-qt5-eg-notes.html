@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/MathML2/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted
+to xhtml by OpenOffice.org - see http://xml.openoffice.org/odf2xhtml for
+more info.--><head
+profile="http://dublincore.org/documents/dcmi-terms/"><meta
+http-equiv="Content-Type" content="application/xhtml+xml;
+charset=utf-8"/><title xml:lang="en-US">AQP Qt 5 Examples Notes</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.creator" content="WHDale"/><meta name="DCTERMS.issued" content="2013-08-09T19:17:00" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.contributor" content="WHDale"/><meta name="DCTERMS.modified" content="2013-08-09T19:17:00" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><base href="."/><style type="text/css">
+	@page {  }
+	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+	td, th { vertical-align:top; font-size:12pt;}
+	h1, h2, h3, h4, h5, h6 { clear:both }
+	ol, ul { margin:0; padding:0;}
+	li { list-style: none; margin:0; padding:0;}
+	<!-- "li span.odfLiEnd" - IE 7 issue-->
+	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+	span.footnodeNumber { padding-right:1em; }
+	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+	* { margin:0;}
+	.P1 { font-size:11pt; line-height:115%; margin-bottom:3.53mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; }
+	.P10 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; }
+	.P11 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; text-align:center ! important; }
+	.P12 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; }
+	.P13 { font-size:11pt; line-height:115%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; }
+	.P14 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; margin-left:0mm; margin-right:9.53mm; text-indent:0mm; }
+	.P15 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; margin-left:0mm; margin-right:9.53mm; text-indent:0mm; }
+	.P16 { font-size:12pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; margin-left:0mm; margin-right:9.53mm; text-indent:0mm; color:#0000ff; }
+	.P17 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; margin-left:0mm; margin-right:9.53mm; text-indent:0mm; font-style:italic; }
+	.P18 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; margin-left:12.7mm; margin-right:9.53mm; text-indent:0mm; }
+	.P19 { font-size:12pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; margin-left:12.7mm; margin-right:9.53mm; text-indent:0mm; color:#0000ff; }
+	.P2 { font-size:11pt; line-height:115%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; }
+	.P3 { font-size:12pt; line-height:115%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; font-weight:bold; }
+	.P4 { font-size:12pt; line-height:115%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; text-align:center ! important; color:#000000; font-weight:bold; }
+	.P5 { font-size:12pt; line-height:115%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; color:#000000; font-weight:bold; }
+	.P6 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; color:#000000; }
+	.P7 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; text-align:center ! important; color:#000000; }
+	.P8 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; text-align:center ! important; color:#000000; }
+	.P9 { font-size:11pt; line-height:100%; margin-bottom:0mm; margin-top:0mm; font-family:Calibri; writing-mode:lr-tb; color:#000000; }
+	.T1 { font-size:14pt; text-decoration:underline; font-weight:bold; }
+	.T11 { color:#000000; }
+	.T12 { color:#363534; }
+	.T2 { font-size:14pt; font-style:italic; text-decoration:underline; font-weight:bold; }
+	.T4 { font-size:12pt; }
+	.T6 { color:#0000ff; font-size:12pt; }
+	.T7 { color:#0000ff; font-size:12pt; }
+	.T8 { color:#0000ff; font-size:12pt; font-style:italic; }
+	<!-- ODF styles with no properties representable as CSS -->
+	.Table1.1 .Table1.10 .Table1.2 .T5 { }
+	</style></head><body dir="ltr"
+><p class="P13"><span
+class="T1">Qt5 </span><span class="T1">Port of Examples for the Book
+</span><span class="T2">Advanced Qt Programming</span></p><p
+class="P2"><span class="T4">August </span><span class="T4">10,
+2013</span></p><p class="P17"><span class="T7"><p>The examples were ported
+by Walter Dale, and these are his notes. I (</span><span class="T6">Mark
+Summerfield</span><span class="T7">)</span><span
+class="T6">,</span><span class="T7"> haven't had time to do anything
+except put the examples and these notes on my web site.</p></span></p><p
+class="P15"><span class="T7"/></p><br /><p class="P14"><span class="T6">The
+table below summarizes the results of porting to Qt5.</span></p><p
+class="P16"> </p><p class="P16">All examples were compiled and executed
+under Qt5.1.0. </p><p class="P16"> </p><p class="P14"><span
+class="T6">Comments were inserted (e.g. “added for Qt5”) so that you can
+search for “Qt5” and find all of the changes. In some examples,
+screenshots can be found that provide additional information; when you
+put the examples into final form, the screenshots will have to be
+deleted. </span></p><p class="P16"> </p><p class="P16">The items in the
+table marked “OK” required only a “QT +=” statement added to the “.pro”
+file plus another “#include” added to main.</p><p class="P16"> </p><p
+class="P14"><span class="T6">For the items marked “OK, code changed for
+Qt5”, the changes are commented in the source code with “Qt5” as noted
+above.</span></p><p class="P16"> </p><p class="P14"><span class="T6">The
+item </span><span class="T8">petridish2</span><span class="T6"> runs OK
+but hangs when “Quit” is clicked. There’s more detail in the table
+below. This requires </span><span class="T7">more research</span><span
+class="T6">.</span></p><p class="P16"> </p><p class="P15"><span
+class="T6">A few compile-time problems remain based on the following
+three issues. These will require </span><span class="T7">more
+research</span><span class="T6">:</span></p><p class="P16"> </p><p
+class="P18"><span class="T6">(1) </span><span
+class="T8">playmusic</span><span class="T6"> and </span><span
+class="T8">playvideo</span><span class="T6"> require Phonon which has
+been replaced in Qt5 by QtMultimedia. The conversion of these two
+examples would require some rewrite of the code plus the revision of
+Chapter 2.</span></p><p class="P19"> </p><p class="P18"><span
+class="T6">(2) </span><span class="T8">outputsampler</span><span
+class="T6"> will have to change (mainwindow.cpp:262: error:
+'PostScriptFormat' is not a member of 'QPrinter') because PostScript is
+not supported in Qt5. The example has to be changed and this would
+require revisions to Chapter 10.</span></p><p class="P19"> </p><p
+class="P18"><span class="T6">(3) </span><span
+class="T8">pagedesigner1</span><span class="T6"> and </span><span
+class="T8">pagedesigner2</span><span class="T6"> have an error,
+(qvariant.h:471: error: 'QVariant::QVariant(Qt::BrushStyle)' is
+private)</span><span class="T6">.</span></p><p class="P16"> </p><p
+class="P16">Where it might help, the problems were captured in
+screenshots and stored in the respective example’s folder.</p><p
+class="P16"> </p><p class="P14"><span class="T6">This is not a 100%
+port, but it’s close.</span></p><p class="P3"> </p><p class="P3"/><table
+border="1" cellspacing="0" cellpadding="0" class="Table1"><colgroup><col
+/><col /><col /><col
+/></colgroup><tr class="Table11"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P4">Page</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P5">Example</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P4">Test Result</p></td><td
+style="text-align:left; " class="Table1_D1"><p
+class="P5">Comment</p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">7</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">weathertrayicon</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">9</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">browserwindow</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9">Some diagnostics appear in the console
+screenshot</p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">9</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">option_parser</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9">No changes needed</p></td></tr><tr
+class="Table12"><td style="text-align:left; "
+class="Table1_A1"><p class="P8">15</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P9">aqp</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P8">OK</p></td><td
+style="text-align:left; " class="Table1_D1"><p
+class="P9">No changes needed</p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">20</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">rsspanel</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">31</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">nyrbviewer</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">44</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">matrixquiz</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">54</p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P9">moviejingle</p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table110"><td
+style="text-align:left; " class="Table1_A1"><p
+class="P8">64</p><p class="P7"> </p></td><td
+style="text-align:left; " class="Table1_A1"><p
+class="P12"><span class="T11">playmusic</span></p><p
+class="P6"> </p></td><td style="text-align:left; "
+class="Table1_A1"><p class="P8">compile problem</p><p
+class="P7"> </p></td><td style="text-align:left; "
+class="Table1_D1"><p class="P12"><span class="T11">Unknown module(s) in
+QT. Phonon has been replaced in Qt5 by QtMultimedia . </span></p><p
+class="P6">Conversion of examples to QtMultimedia would require
+revisions to Chapter 2.</p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">80</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P12"><span
+class="T11">playvideo</span></p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">compile problem</p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">Same comments as playmusic, above.</p></td></tr><tr
+class="Table12"><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">90</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">zipcodes1</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">OK</p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9"> </p></td></tr><tr class="Table110"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">113</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">zipcodes2</p><p class="P6"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK, code changed </p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">tablemodel.cpp:208: error: 'reset' was not declared in this
+scope, see screenshots</p><p class="P6">QT5 states: Use
+beginResetModel() and endResetModel() instead.</p></td></tr><tr
+class="Table110"><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">130</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">timelog1</p><p class="P6"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK, code changed </p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">richtextlineedit.cpp:218: error: 'escape' is not a member of
+'Qt', obsoleted for Qt5 </p><p class="P6">treemodel.cpp:466 and 488:
+error: 'reset' was not declared in this scope, fixed</p></td></tr><tr
+class="Table12"><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">151</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">timelog2</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">OK, code changed </p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">Same comments as timelog1, above.</p></td></tr><tr
+class="Table12"><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">188</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">folderview</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">OK</p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">208</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">tiledlistview</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">224</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">censusvisualizer</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">249</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">image2image</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P12"><span class="T11">QT += widgets
+</span><span class="T5">concurrent</span><span class="T11"> #added for
+Qt5</span></p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">263</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">numbergrid</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table110"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">287</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">crossfader</p><p class="P6"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK, code changed </p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">mainwindow.cpp:160: error: 'storageLocation' is not a member
+of 'QDesktopServices'</p><p class="P10"><span class="T11">The Qt5
+</span><span class="T12">QStandardPaths::PicturesLocation has replaced
+it.</span></p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">302</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">findduplicates</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">322</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">xmledit</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">353</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">textedit</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table110"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">361</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P12"><span class="T11">outputsampler</span></p><p
+class="P6"> </p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">compile problem</p><p
+class="P7"> </p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P12"><span class="T11">mainwindow.cpp:262:
+error: 'PostScriptFormat' is not a member of 'QPrinter'.</span></p><p
+class="P10"><span class="T11">PostScript is not supported in Qt5.
+Changing example would require revisions to Chapter
+10.</span></p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">392</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">petridish1</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">OK</p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P9"> </p></td></tr><tr class="Table110"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">469</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">petridish2</p><p class="P6"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P11"><span class="T11">OK, but…</span></p><p
+class="P7"> </p></td><td style="text-align:left;; "
+class="Table1_D1"><p class="P12"><span class="T11">Closing exception
+after clicking on Quit. When using Qt5.0.2, an assert failure was
+reported.</span></p><p class="P6">Using Qt5.1.0 fixed the assert error,
+but Quit still has a bug of some kind. See screenshots.</p></td></tr><tr
+class="Table110"><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">409</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">pagedesigner1</p><p class="P6"> </p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">compile problem</p><p class="P7"> </p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">qvariant.h:471: error: 'QVariant::QVariant(Qt::BrushStyle)'
+is private</p><p class="P6">This one requires more research.</p></td></tr><tr class="Table12"><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">424</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P9">pagedesigner2</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P8">compile problem</p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9">Same comments as pagedesigner1, above.</p></td></tr><tr
+class="Table12"><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">481</p></td><td
+style="text-align:left;; " class="Table1_A1"><p
+class="P9">finddialog</p></td><td style="text-align:left;; "
+class="Table1_A1"><p class="P8">OK</p></td><td
+style="text-align:left;; " class="Table1_D1"><p
+class="P9"> </p></td></tr></table><p class="P1"> </p></body></html>

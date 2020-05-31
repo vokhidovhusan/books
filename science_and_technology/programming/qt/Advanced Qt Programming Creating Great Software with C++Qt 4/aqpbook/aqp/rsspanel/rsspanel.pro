@@ -1,0 +1,13 @@
+CONFIG	    += console debug
+QT	    += network webkit
+HEADERS	    += ../option_parser/option_parser.hpp
+SOURCES	    += ../option_parser/option_parser.cpp
+INCLUDEPATH += ../option_parser
+HEADERS	    += rssitem.hpp
+HEADERS     += rssreader.hpp
+SOURCES     += rssreader.cpp
+HEADERS     += rsscombobox.hpp
+SOURCES     += rsscombobox.cpp
+HEADERS     += rsspanel.hpp
+SOURCES     += rsspanel.cpp
+SOURCES     += main.cpp

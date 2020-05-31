@@ -1,0 +1,72 @@
+<html>
+<head><title>Matrix Quiz</title>
+</head>
+<body>
+<h3><center><font color=blue>Matrix Quiz</font></center></h3>
+Name:
+<object type="application/x-qt-plugin" classid="QLineEdit"
+    id="nameEdit" height="30">Can't load QLineEdit plugin!</object>
+<p>
+<object type="application/x-qt-plugin" classid="MatrixWidget"
+    id="leftMatrix" width="124" height="94" readonly="1">
+Can't load MatrixWidget plugin!</object>
+<font size=36>&nbsp;<sup>+</sup>&nbsp;</font>
+<object type="application/x-qt-plugin" classid="MatrixWidget"
+    id="rightMatrix" width="124" height="94" readonly="1">
+Can't load MatrixWidget plugin!</object>
+<font size=36>&nbsp;<sup>=</sup>&nbsp;</font>
+<object type="application/x-qt-plugin" classid="MatrixWidget"
+    id="answerMatrix" width="124" height="94">
+Can't load MatrixWidget plugin!</object>
+<p>
+<object type="application/x-qt-plugin" classid="QPushButton"
+    id="newButton" height="40" width="100">
+Can't load QPushButton plugin!</object>
+<object type="application/x-qt-plugin" classid="QPushButton"
+    id="submitButton" height="40" width="100">
+Can't load QPushButton plugin!</object>
+<p>
+<object type="application/x-qt-plugin" classid="QLabel"
+    id="resultLabel" height="40" width="400">
+Can't load QLabel plugin!</object>
+
+<script>
+function repopulateMatrices()
+{
+    leftMatrix.repopulateMatrix();
+    rightMatrix.repopulateMatrix();
+    answerMatrix.clearMatrix();
+}
+
+function checkAnswer()
+{
+    var allCorrect = true;
+    for (var row = 0; row < leftMatrix.rowCount; ++row) {
+        for (var column = 0; column < leftMatrix.columnCount;
+             ++column) {
+            var highlight = false;
+            if (Number(leftMatrix.valueAt(row, column)) +
+                Number(rightMatrix.valueAt(row, column)) !=
+                Number(answerMatrix.valueAt(row, column))) {
+                highlight = true;
+                allCorrect = false;
+            }
+            answerMatrix.setHighlighted(row, column, highlight);
+        }
+    }
+    name = nameEdit.text == "" ? "mystery person" : nameEdit.text;
+    if (allCorrect)
+        resultLabel.text = "Yes, " + name + ", that's right!";
+    else
+        resultLabel.text = "No, " + name + ", that's not right.";
+}
+newButton.text = "&New";
+submitButton.text = "&Submit";
+resultLabel.text = "Enter the answer and click Submit";
+repopulateMatrices();
+newButton.clicked.connect(repopulateMatrices);
+submitButton.clicked.connect(checkAnswer);
+nameEdit.setFocus();
+</script>
+</body>
+</html>

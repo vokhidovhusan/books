@@ -1,0 +1,33 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="filenew.png">images/filenew.png</file>
+<file alias="fileopen.png">images/fileopen.png</file>
+<file alias="filesave.png">images/filesave.png</file>
+<file alias="fileprint.png">images/fileprint.png</file>
+<file alias="fileexport.png">images/fileexport.png</file>
+<file alias="filequit.png">images/filequit.png</file>
+<file alias="editselecteditem.png">images/editselecteditem.png</file>
+<file alias="editaddtext.png">images/editaddtext.png</file>
+<file alias="editaddbox.png">images/editaddbox.png</file>
+<file alias="editaddsmiley.png">images/editaddsmiley.png</file>
+<file alias="editcopy.png">images/editcopy.png</file>
+<file alias="editcut.png">images/editcut.png</file>
+<file alias="editpaste.png">images/editpaste.png</file>
+<file alias="editcleartransforms.png">images/editcleartransforms.png</file>
+<file alias="showgrid.png">images/showgrid.png</file>
+<file alias="zoom-in.png">images/zoom-in.png</file>
+<file alias="zoom-out.png">images/zoom-out.png</file>
+<file alias="color.png">images/color.png</file>
+<file alias="brush.png">images/brush.png</file>
+<file alias="align-left.png">images/align-left.png</file>
+<file alias="align-right.png">images/align-right.png</file>
+<file alias="align-bottom.png">images/align-bottom.png</file>
+<file alias="align-top.png">images/align-top.png</file>
+<file alias="pen.png">images/pen.png</file>
+<file alias="smileysmile.png">images/smileysmile.png</file>
+<file alias="smileysad.png">images/smileysad.png</file>
+<file alias="smileyneutral.png">images/smileyneutral.png</file>
+<file alias="icon.png">images/icon.png</file>
+</qresource>
+</RCC>
+

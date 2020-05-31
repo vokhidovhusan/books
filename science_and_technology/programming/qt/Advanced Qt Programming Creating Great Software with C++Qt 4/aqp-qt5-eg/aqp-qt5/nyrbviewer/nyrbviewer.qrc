@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="fetch_issue_links.js">scripts/fetch_issue_links.js</file>
+<file alias="fetch_article_links.js">scripts/fetch_article_links.js</file>
+<file>nyrb.png</file>
+</qresource>
+</RCC>
+

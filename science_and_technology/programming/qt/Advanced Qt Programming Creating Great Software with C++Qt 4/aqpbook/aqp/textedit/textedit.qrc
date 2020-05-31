@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="bold.png">images/bold.png</file>
+<file alias="italic.png">images/italic.png</file>
+<file alias="align-text-left.png">images/align-text-left.png</file>
+<file alias="align-text-right.png">images/align-text-right.png</file>
+<file alias="align-text-center.png">images/align-text-center.png</file>
+<file alias="align-text-justify.png">images/align-text-justify.png</file>
+</qresource>
+</RCC>
+

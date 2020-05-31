@@ -1,0 +1,16 @@
+CONFIG	    += console debug
+#QT	    += network webkit        #deleted for Qt5
+QT      += network webkitwidgets #added for Qt5
+DEFINES	    += DEBUG
+HEADERS	    += ../aqp/kuhn_munkres.hpp
+SOURCES	    += ../aqp/kuhn_munkres.cpp
+HEADERS	    += ../aqp/alt_key.hpp
+SOURCES	    += ../aqp/alt_key.cpp
+INCLUDEPATH += ../aqp
+HEADERS	    += ../option_parser/option_parser.hpp
+SOURCES	    += ../option_parser/option_parser.cpp
+INCLUDEPATH += ../option_parser
+HEADERS	    += browserwindow.hpp
+SOURCES     += browserwindow.cpp
+SOURCES     += main.cpp
+RESOURCES   += browserwindow.qrc

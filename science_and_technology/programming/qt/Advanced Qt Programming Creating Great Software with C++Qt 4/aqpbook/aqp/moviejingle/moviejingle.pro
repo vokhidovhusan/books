@@ -1,0 +1,14 @@
+CONFIG	    += console debug
+HEADERS	    += ../aqp/alt_key.hpp
+SOURCES	    += ../aqp/alt_key.cpp
+HEADERS	    += ../aqp/kuhn_munkres.hpp
+SOURCES	    += ../aqp/kuhn_munkres.cpp
+HEADERS	    += ../aqp/aqp.hpp
+SOURCES	    += ../aqp/aqp.cpp
+RESOURCES   += ../aqp/aqp.qrc
+INCLUDEPATH += ../aqp
+HEADERS     += jingleaction.hpp
+SOURCES	    += jingleaction.cpp
+HEADERS     += mainwindow.hpp
+SOURCES	    += mainwindow.cpp
+SOURCES	    += main.cpp

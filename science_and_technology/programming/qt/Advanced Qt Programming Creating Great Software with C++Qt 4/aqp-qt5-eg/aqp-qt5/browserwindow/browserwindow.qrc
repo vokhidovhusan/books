@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="history.png">images/history.png</file>
+<file alias="zoomin.png">images/zoomin.png</file>
+<file alias="zoomout.png">images/zoomout.png</file>
+<file alias="seturl.png">images/seturl.png</file>
+</qresource>
+</RCC>
+

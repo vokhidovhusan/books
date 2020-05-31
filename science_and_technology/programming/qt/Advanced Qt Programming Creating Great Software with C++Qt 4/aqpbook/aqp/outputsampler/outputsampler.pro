@@ -1,0 +1,17 @@
+CONFIG	    += console debug
+QT	    += svg
+HEADERS	    += ../aqp/kuhn_munkres.hpp
+SOURCES	    += ../aqp/kuhn_munkres.cpp
+HEADERS	    += ../aqp/alt_key.hpp
+SOURCES	    += ../aqp/alt_key.cpp
+HEADERS	    += ../aqp/aqp.hpp
+SOURCES	    += ../aqp/aqp.cpp
+RESOURCES   += ../aqp/aqp.qrc
+INCLUDEPATH += ../aqp
+HEADERS	    += pagedata.hpp
+SOURCES     += pagedata.cpp
+HEADERS	    += mainwindow.hpp
+SOURCES     += mainwindow.cpp
+SOURCES     += main.cpp
+DEFINES	    += EMBED_SVG
+#DEFINES	    += PAINT_USING_QTEXTDOCUMENT

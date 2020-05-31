@@ -1,0 +1,15 @@
+CONFIG	     += console debug
+HEADERS	     += ../aqp/kuhn_munkres.hpp
+SOURCES	     += ../aqp/kuhn_munkres.cpp
+HEADERS	     += ../aqp/alt_key.hpp
+SOURCES	     += ../aqp/alt_key.cpp
+HEADERS	     += ../aqp/aqp.hpp
+SOURCES	     += ../aqp/aqp.cpp
+INCLUDEPATH  += ../aqp
+HEADERS      += convertimagetask.hpp
+SOURCES	     += convertimagetask.cpp
+HEADERS      += mainwindow.hpp
+SOURCES	     += mainwindow.cpp
+SOURCES	     += main.cpp
+DEFINES	     += USE_CUSTOM_DIR_MODEL
+DEFINES	     += USE_QTCONCURRENT
