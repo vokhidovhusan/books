@@ -7,7 +7,7 @@ scipy==1.0.1
 torch==0.4
 torchvision==0.2.0
 tensorboardX==1
-tensorflow==1.7.0
+tensorflow==2.4.0
 tensorboard==1.7.0
 pybullet==1.9.6
 matplotlib==2.2.2
